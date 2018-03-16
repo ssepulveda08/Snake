@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+app.set('port', (process.env.PORT || 3000))
+
 var path = require('path');
 app.set('views', path.join(__dirname, 'views'));
 console.log(__dirname)
@@ -12,7 +14,5 @@ app.get('/', function (req, res) {
   res.render('snake.html');
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
+
+app.listen(app.get('port'));
