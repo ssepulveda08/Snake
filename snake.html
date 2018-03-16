@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake-2.0</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+		body{background-color: #000000}
+		canvas{border: solid; border-color: #FFFFFF}
+		.col{text-align: center;}
+		.tittle-modal{text-align: center;}
+		.text_puntuacion{text-align: center; font-size: 130px;  color:  #FFFFFF}
+		.text-white{ color:#FFFFFF; }
+		.text-tittle{ color:#FFFFFF; font-size: 50px;}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+  	<div class="row">
+   		<div class="col text-tittle " >
+	    	Snake 2.0
+	    </div>
+	    <div class="w-100"></div>
+	   	<div class="col text-white">
+	   		Mejores Puntajes 
+	    				<table class="table table-dark">
+			  <thead>
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">ID juego</th>
+			      <th scope="col">Tiempo</th>
+			      <th scope="col">Puntuacion</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>0022</td>
+			      <td>45:44</td>
+			      <td>38540</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>6465</td>
+			      <td>43:59</td>
+			      <td>35090</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>9878</td>
+			      <td>41:11</td>
+			      <td>31220</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">4</th>
+			      <td>1028</td>
+			      <td>39:59</td>
+			      <td>30290</td>
+			    </tr>
+			  </tbody>
+			</table>
+
+	    </div>
+	    <div class="col">
+				<canvas id="canvas" width="500" height="300"></canvas>
+	    </div>
+	    <div class="col text-white" >
+	      <div id="puntuacion">
+	      	
+	      </div>
+	      POINTS
+	    </div>
+
+	    
+  </div>
+  <div class="row">
+	  	<div class="col">
+	  		 <h2 class="text-white">Tu puntuaaciones:</h2>
+		     <div id="tabla_puntuacion">
+
+		     	<table class="table table-dark" id="table_tupuntuacion">
+		     	 <thead>
+				    <tr>
+				      <th scope="col">ID Juego</th>
+				      <th scope="col">Tiempo</th>
+				      <th scope="col">Puntuacion</th>
+				    </tr>
+				  </thead>
+				  
+				</table>
+		     </div> 
+
+		    </div>
+  </div>
+</div>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" id="modalp" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+
+    	<h1 class="tittle-modal">Gamer Over</h1>
+
+    	<div class="container">
+		  <div class="row">
+		    <div class="col">
+		      	<p>Que bien has jugado, supero tus record  y el de tus amigos para ser el mejor del mundo</p>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col">
+		      <h3>Puntuacion:</h3>
+		      <div id="div_puntuacion">
+		      	
+		      </div>
+		    </div>
+		    <div class="col">
+		      <h3>Tiempo:</h3>
+		      <div id="div_tiemtpo">
+		      	
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<button type="button" id="btn_volver_jugar" class="btn btn-secondary btn-lg">Volver a Jugar</button>
+
+    </div>
+  </div>
+</div>
+
+	<script src="game-dist.js"></script>
+	<script src="view.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
