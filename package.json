@@ -1,0 +1,29 @@
+{
+  "name": "snake_v2",
+  "version": "1.0.0",
+  "description": "tracional juego de sanke",
+  "main": "game-dist.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssepulveda08/Snake.git"
+  },
+  "keywords": [
+    "snake",
+    "game",
+    "javascript"
+  ],
+  "author": "ssepulved08",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssepulveda08/Snake/issues"
+  },
+  "homepage": "https://github.com/ssepulveda08/Snake#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
