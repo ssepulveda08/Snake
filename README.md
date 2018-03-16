@@ -1,2 +1,2 @@
 # Snake
-El tradicional juego de la culebrita basado en HTML5   Y javascript 
+Código open source del tradicional juego de la culebrita basado en HTML   Y java script  
