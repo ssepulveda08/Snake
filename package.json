@@ -5,7 +5,8 @@
   "main": "game-dist.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app" 
+    "postinstall": "npm run build",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
