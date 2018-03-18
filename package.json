@@ -2,14 +2,12 @@
   "name": "snake_v2",
   "version": "0.0.0",
   "engines": {
-    "node": "6.11.0",
-    "npm": "3.10.10"
+    "node": "8.9.4",
+    "npm": "5.7.1"
   },
   "description": "tracional juego de sanke",
   "scripts": {
-    "start": "node app.js",
-    "test": "mocha",
-    "postinstall": "bower install && grunt build"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
