@@ -1,8 +1,7 @@
 {
   "name": "snake_v2",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "tracional juego de sanke",
-  "main": "game-dist.js",
   "scripts": {
     "start": "node app.js"
   },
@@ -16,7 +15,6 @@
     "javascript"
   ],
   "author": "ssepulved08",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ssepulveda08/Snake/issues"
   },
